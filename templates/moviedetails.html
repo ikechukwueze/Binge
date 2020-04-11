@@ -1,0 +1,54 @@
+
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+{% load static %}
+    
+<div class="movie-detail-div" style="background-image: linear-gradient(to bottom, rgba(31, 29, 30, 0.555), rgba(245, 246, 252, 0.52)),
+url( {{moviedetails.backdrop.url}} );"> 
+    <div class="container" >
+        <div class="row" style="padding-top: 125px; padding-bottom: 125px;"> 
+            <div class="col-lg-4 text-center ml-1">
+                <img class="img-fluid rounded "  src={{ moviedetails.poster.url }} >
+                <p id='play-trailer'><a href="watchtrailer?movie_title={{moviedetails.title}}&movie_year={{moviedetails.year}}" target="_blank"> Watch Trailer <img src={% static "img/youtube_red.png" %} width="30px" alt=""></a></p> 
+            </div>
+            <div class="col-lg-7 pt-3 ">
+                <div class="movie_info_head">
+                    <h1><b>{{moviedetails.title}}    <a href="playmovie?movie_title={{moviedetails.title}}" target="_blank"> <img src={% static "img/youtube_red.png" %} width="30px" alt=""></a> </b></h1>
+                    <p>{{moviedetails.plot}}</p>
+                </div>
+               
+                <div class="row movie_info">
+                    <div class="col-6">
+                        <p> <b>Director:</b> <br>{{moviedetails.director}}</p>
+                        <p> <b>Writers:</b>  <br>{{moviedetails.writers|truncatechars:90}}</p>
+                        <p> <b>Cast:</b>  <br>{{moviedetails.cast}}</p>
+                    </div>
+                    
+                    <div class="col-6">
+                        <p><b> Genre:</b> <br>{{moviedetails.genre}}</p>
+                        <p><b> Release Date:</b>  <br>{{moviedetails.release_date}}</p>
+                        <p> <b>Runtime:</b>  <br>{{moviedetails.runtime}}</p>
+                        <p> <b>Rated:</b>  <br>{{moviedetails.rated}}</p>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+    
+
+
+
+{% endblock %} 

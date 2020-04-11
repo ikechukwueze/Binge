@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+ddd
+<form action="sadd" method="POST">
+    {% csrf_token %}
+    <label for="entry">Enter Movie Name</label>
+    <input type="text" name="movie" id="">
+    <input type="submit" value="submit">
+
+</form>
+
+
+
+{% endblock %}

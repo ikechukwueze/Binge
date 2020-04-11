@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+{% load static %}
+
+<div class="container" style="margin-top: 140px;">
+
+    <div class="body row mb-5 mb-md-1 ">
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-5 ">
+            <img src= "{% static 'img/bladerunner2049.jpg' %}" class="img-fluid rounded mx-auto" alt="" style="display: block;">
+            <p class="text-center pt-2">Blade Runner 2049<br>2017</br> </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+            <img src="{% static 'img/1917.jpg' %}" class=" img-fluid rounded mx-auto " alt="" style="display: block;">
+            <p class="text-center pt-2">1917 <br>2019</br> </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+            <img src= "{% static 'img/doctorstrange.jpg' %}" class="img-fluid rounded mx-auto" alt="" style="display: block;">
+            <p class="text-center pt-2">Doctor Strange <br>2016</br> </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+            <img src="{% static 'img/thesocialnetwork.jpg' %}" class="img-fluid rounded mx-auto" alt="" style="display: block;">
+            <p class="text-center pt-2">The Social Network<br>2010</br> </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+            <img src="{% static 'img/JurassicPark.jpg' %}" class="img-fluid rounded mx-auto" alt="" style="display: block;">
+            <p class="text-center pt-2">Jurassic Park<br>1993</br> </p>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+                <a href=''>
+                    <img src={{data_objects.poster.url}} class="img-fluid rounded mx-auto" alt="" style="display: block;">
+                    <p class="text-center pt-2">{{ data_objects.title }}<br>{{ data_objects.year }}</br> </p>
+                </a>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6 mb-5 ">
+            <img src="{% static 'img/little miss sunshine.jpg' %}" class="img-fluid rounded mx-auto " alt="" style="display: block;">
+            <p class="text-center pt-2">Little Miss Sunshine<br>2006</br> </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+            <img src="{% static 'img/faultinourstars.jpg' %}" class=" img-fluid rounded mx-auto " alt="" style="display: block;">
+            <p class="text-center pt-2">The Fault In Our Stars <br>2014</br> </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+            <img src="{% static 'img/theavengers.jpg' %}" class="img-fluid rounded mx-auto" alt="" style="display: block;">
+            <p class="text-center pt-2">The Avengers <br>2012</br> </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+            <img src="{% static 'img/whiplash.jpg' %}" class="img-fluid rounded mx-auto" alt="" style="display: block;">
+            <p class="text-center pt-2">Whiplash<br>2014</br> </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+            <img src="{% static 'img/spiderman-2.jpg' %}" class="img-fluid rounded mx-auto" alt="" style="display: block;">
+            <p class="text-center pt-2">Spider-Man 2<br>2004</br> </p>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+            <img src="{% static 'img/The Phantom Menace.jpg' %}" class="img-fluid rounded mx-auto" alt="" style="display: block;">
+            <p class="text-center pt-2">Star Wars: Episode I <br>1999</br> </p>
+        </div>
+
+    </div>
+
+    <div class="body row mb-2" sstyle="margin-top: 0px;">
+        
+    </div>
+
+</div>
+
+{% endblock %} 

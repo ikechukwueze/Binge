@@ -1,0 +1,6 @@
+{
+    "python.autoComplete.extraPaths": [ "C:\\Projects\\2020\\Binge\\Lib\\site-packages" ],
+    "python.pythonPath": "C:\\Projects\\2020\\Binge\\Scripts\\python3.exe",
+    "python.autoComplete.addBrackets": true,
+    "python.linting.pylintEnabled": false,
+}

@@ -1,0 +1,23 @@
+
+
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+{% load static %}
+
+<div class= 'row mx-auto' style="margin-top: 100px;">
+    <form action=search method='POST' enctype="multipart/form-data">
+        {% csrf_token %}
+        <label>Enter movie name</label>
+        <input type='text' name='movie' value='' required> <br>
+        <label for=""> Search movie</label>
+        <input type="file" name="movie_file" id=""> <br>
+        <input type='submit' value="submit">
+    </form>
+</div>
+
+
+{% endblock %} 

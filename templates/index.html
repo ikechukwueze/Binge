@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+{% load static %}
+
+<div class="container" style="margin-top: 140px;">
+
+    <div class="body row mb-5 mb-md-1 ">
+        {% for movie in all_movies %}
+        <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 mb-5">
+            <a href="moviedetails?movie_title={{movie.title}}"> 
+                <img src={{movie.poster.url}} class="img-fluid rounded mx-auto" alt="" style="display: block;">
+               
+                <p class="text-center pt-2"> {{ movie.title|truncatechars:25 }} <br>{{ movie.year }}</br> </p>
+                
+            </a>
+        </div>
+
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock %} 

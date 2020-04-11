@@ -1,0 +1,59 @@
+body{
+    background-color: rgba(231, 226, 222, 0.822);
+}
+.body {
+    sbackground-color: whitesmoke;
+    font-family: 'Barlow Condensed';
+    font-size: 15px;
+    font-weight: 600;
+    
+    text-decoration: none;
+}
+
+a:link {
+    
+    text-decoration: none;
+    
+}
+
+
+
+.movie-detail-div {
+    
+    
+    background-size: cover;    
+
+}
+
+
+.movie_info_head {
+    font-family: 'Barlow';
+    font-size: 191px;
+    color: white;
+
+}
+
+.movie_info_head p {
+    font-size: 18px;
+    color: white;
+
+}
+
+.movie_info {
+    font-family: 'Barlow';
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(243, 231, 231);
+}
+
+#play-trailer {
+    padding-top: 5px;
+    font-family: 'Barlow';
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(243, 231, 231);
+}
+
+#play-trailer a {
+    color: rgb(243, 231, 231);
+}
